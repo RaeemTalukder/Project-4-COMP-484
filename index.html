@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timed Typing Test App</title>
+
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900">
+</head>
+
+<body>
+
+<header class="masthead">
+    <h1>Test Your Typing Speed</h1>
+</header>
+
+<main class="main">
+
+    <article class="intro">
+        <p>Type the text exactly as shown. The timer starts when you begin typing.</p>
+    </article>
+
+    <section class="test-area">
+
+        <div id="origin-text">
+            <p></p>
+        </div>
+
+        <div class="test-wrapper">
+            <textarea id="test-area" rows="6" placeholder="Start typing here..."></textarea>
+        </div>
+
+        <div class="meta">
+
+            <section id="clock">
+                <div class="timer">00:00:00</div>
+            </section>
+
+            <button id="reset">Start Over</button>
+            <button id="dark-mode-toggle">Dark Mode</button>
+            <div class="stats">
+                <p>WPM: <span id="wpm">0</span></p>
+                <p>Errors: <span id="errors">0</span></p>
+            </div>
+
+            <div class="leaderboard">
+                <h3>Top 3 Scores</h3>
+                <ol id="leaderboard"></ol>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

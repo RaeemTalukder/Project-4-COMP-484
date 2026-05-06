@@ -1,0 +1,151 @@
+
+/*default themes*/
+:root {
+    --bg: #f4f4f4;
+    --text: #111;
+    --card: #ffffff;
+    --border: #ccc;
+    --input-text: #111;
+    --input-bg: #fff;
+    --accent: #429890;
+    --header: #0040ca;
+    --button: #E95D0F;
+}
+/*dark mode themes*/
+body.dark {
+    --bg: #121212;
+    --text: #f5f5f5;
+    --card: #1e1e1e;
+    --border: #444;
+    --input-text: #ffffff;
+    --input-bg: #2a2a2a;
+    --accent: #2a6f6a;
+    --header: #0040ca;
+    --button: #ff7a2f;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+h1, h2, h3, h4, h5, h6, p, li {
+    color: var(--text);
+}
+
+
+.masthead {
+    padding: 1em 2em;
+    background-color: var(--header);
+    color: var(--text);
+}
+
+.masthead h1 {
+    text-align: center;
+}
+
+
+.intro {
+    padding: 2em;
+    background: var(--accent);
+    color: var(--text);
+}
+
+.intro p,
+.test-area {
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.test-area {
+    margin-bottom: 4em;
+    padding: 0 2em;
+}
+
+
+.test-wrapper {
+    border: 10px solid grey;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+#origin-text {
+    margin: 1em 0;
+    padding: 1em 1em 0;
+    background-color: var(--card);
+    color: var(--text);
+}
+
+#origin-text p {
+    margin: 0;
+    padding-bottom: 1em;
+    color: var(--text);
+}
+
+
+.test-wrapper textarea {
+    flex: 1;
+    background: var(--input-bg);
+    color: var(--input-text);
+    border: 3px solid var(--border);
+    font-size: 18px;
+    outline: none;
+}
+
+.test-wrapper textarea::placeholder {
+    color: #888;
+}
+
+
+.meta {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.timer {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+#reset {
+    padding: .5em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--button);
+    background: var(--card);
+    border: 3px solid var(--button);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#reset:hover {
+    color: white;
+    background-color: var(--button);
+}
+
+
+.stats,
+.leaderboard {
+    color: var(--text);
+}
+
+
+b, strong { font-weight: bold; }
+em, i { font-style: italic; }
+
+pre {
+    background: var(--card);
+    padding: 1em;
+    overflow: auto;
+}
