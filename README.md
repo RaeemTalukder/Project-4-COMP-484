@@ -1,7 +1,9 @@
 https://raeemtalukder.github.io/Project-4-COMP-484/
 
 clear storage:
-localstorage.clear
+localStorage.removeItem("typingScores");
+
+
 Notes: 
 have standard time
 input validation
