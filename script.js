@@ -147,11 +147,12 @@ function finishTest() {
 //save scores and names
 function saveScore(wpm) {
     let name = prompt("Enter your name:") || "Anonymous";
-
+//convert timer to seconds for easier comparison and storage
     const totalSeconds = timer[0] * 60 + timer[1] + timer[2] / 100;
-
+//get existing scores, add new score, sort and keep top 3
     let scores = JSON.parse(localStorage.getItem("typingScores")) || [];
-
+//store name, wpm, time in seconds, and display time for leaderboard
+    scores.push({
     scores.push({
         name: name,
         wpm: wpm,
@@ -164,7 +165,7 @@ function saveScore(wpm) {
 
     // keep top 3 fastest
     scores = scores.slice(0, 3);
-
+    / store back to localStorage
     localStorage.setItem("typingScores", JSON.stringify(scores));
 
     loadLeaderboard();
@@ -175,7 +176,7 @@ function loadLeaderboard() {
     let scores = JSON.parse(localStorage.getItem("typingScores")) || [];
 
     leaderboardDisplay.innerHTML = "";
-
+// display each score with rank, name, time, and wpm
     scores.forEach((s, i) => {
         leaderboardDisplay.innerHTML += `
             <li>
