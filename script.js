@@ -56,7 +56,7 @@ darkToggle.addEventListener("click", () => {
     }
 });
 
-//random text
+//UNIQUE FEATURE 2: Set random text from array on load and reset
 function setRandomText() {
     const random = Math.floor(Math.random() * texts.length);
     originTextElement.textContent = texts[random];
