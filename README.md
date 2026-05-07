@@ -15,5 +15,5 @@ content randomization
 live performance metrics
 
 Unique implementations: 
-20. Dark Mode Toggle: Show the JavaScript logic that swaps CSS classes to change the app's theme
+Randomization Strategy: Show how you used Math.random() to pull a new string from your array of paragraphs on each reset
 3. WPM Calculation: Demonstrate the math used to convert total characters and elapsed time into a real-time Words Per Minute stat.
